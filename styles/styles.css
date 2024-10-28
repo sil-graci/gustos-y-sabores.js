@@ -1,0 +1,463 @@
+:root {
+  --color-principal: #160f29;
+  --color-acento: #368f8b;
+  --color-oscuro: #ddbda7;
+  --fondo-oscuro: #246a73;
+  --fondo-claro: #f3dfc1;
+  --color-fuerte: #00bcd4;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  color: #f0f0f0;
+  /* color: var(--color-principal); */
+  text-shadow: 3px 3px 6px var(--color-principal);
+  font-weight: 900;
+  
+}
+h2,
+h3,
+#pie {
+  color: var(--color-principal);
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+nav,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+
+section {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid var(--color-oscuro);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+header {
+  background-color: var(--color-acento);
+  border: 2px solid var(--color-principal);
+}
+.titulo {
+  text-align: center;
+}
+
+.cabecera {
+  display: flex;
+  padding: 8px;
+  gap: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----------------------------------------------------------------------- */
+/* CARRITO */
+/* ----------------------------------------------------------------------- */
+
+.carrito a {
+  color: var(--color-principal);
+  font-size: 1.7em;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+
+
+
+.carrito a:hover{
+  color: var(--color-fuerte);
+  background-color:var(--color-principal);
+  border-radius: 10px;
+  font-size: 1.7em;
+}
+
+#cuenta-carrito{
+  display: inline-block;
+  height: 25px;
+  width: 15px;
+  line-height: 25px;
+  text-align: center;
+ 
+}
+/* ----------------------------------------------------------------------- */
+/* BARRA DE NAVEGACIÓN */
+/* ----------------------------------------------------------------------- */
+.navbar {
+  background: radial-gradient(circle, var(--fondo-claro), var(--fondo-oscuro));
+}
+
+.nav-link {
+  color: var(--color-principal);
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--color-fuerte);
+  border: 2px solid var(--fondo-oscuro);
+  background-color: var(--color-principal);
+  border-radius: 5px;
+}
+
+.navbar-toggler {
+  background-color: #f0f0f0;
+  padding: 5px;
+  margin: 8px 0px;
+}
+
+.logo {
+  width: 100px;
+  aspect-ratio: 1;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA VIDEO PRESENTACIÓN */
+/* ----------------------------------------------------------------------- */
+#presentacion {
+  background: linear-gradient(to right, #8f2d56, #218380, #73d2de);
+  box-shadow: 0px 0px 9px rgba(165, 42, 42, 0.8);
+  border-radius: 5px;
+}
+
+.video-presentacion {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA ACERCA DE NOSOTROS */
+/* ----------------------------------------------------------------------- */
+details summary {
+  color: var(--color-oscuro);
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+}
+
+details {
+  background-color: var(--fondo-oscuro);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-principal);
+  color: #f0f0f0;
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PRODUCTOS */
+/* ----------------------------------------------------------------------- */
+.productos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.producto {
+  color: var(--color-acento);
+  background-color: var(--fondo-claro);
+  box-shadow: 3px 5px 7px rgba(165, 42, 42, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+.producto img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  padding-top: 10px;
+}
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA RESEÑAS */
+/* ----------------------------------------------------------------------- */
+.resenias-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.resenias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0px 20px 20px;
+}
+
+.resenias p {
+  color: var(--fondo-oscuro);
+  font-weight: bolder;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ece7e7;
+  transition: transform 0.3s ease-in-out;
+  border: 0.5px solid rgba(165, 42, 42);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA FORMULARIO */
+/* ----------------------------------------------------------------------- */
+#contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contenedor-form {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+#name,
+#mail,
+#message,
+#contacto button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#name:focus,
+#mail:focus,
+#message:focus {
+  border-color: var(--color-acento);
+  box-shadow: 0 0 5px var(--color-acento);
+  outline: none;
+}
+
+#contacto button {
+  color: var(--fondo-oscuro);
+  background-color: white;
+  box-shadow: 0px 0px 7px rgba(165, 42, 42, 0.8);
+  font-size: large;
+}
+
+#contacto button:hover {
+  color: var(--color-acento);
+  font-weight: bolder;
+  border: 3px solid var(--color-oscuro);
+  border-radius: 5px;
+  background-color: var(--color-principal);
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA FOOTER */
+/* ----------------------------------------------------------------------- */
+#pie {
+  background: linear-gradient(45deg, var(--fondo-oscuro), var(--fondo-claro));
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid var(--color-acento);
+  margin-top: auto;
+}
+
+.texto-pie {
+  margin: 0;
+  font-size: larger;
+}
+
+.anio {
+  margin-right: 20px;
+}
+
+.redes {
+  display: flex;
+  gap: 20px;
+}
+.redes i {
+  font-size: x-large;
+}
+
+/* --------------------------MEDIA QUERY-----------------------------------*/
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO MÓVILES PEQUEÑOS */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 599px) {
+  .logo {
+    width: 40px;
+  }
+
+  .carrito a{
+    font-size: 1em;
+  }
+
+  .resenias {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 0;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .mapa {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  details summary {
+    font-size: 16px;
+  }
+
+  .contenedor-form {
+    width: 100%;
+  }
+
+  #pie {
+    flex-direction: column;
+    padding: 3px 0 8px;
+  }
+  .anio {
+    margin-right: 0px;
+  }
+}
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO PEQUEÑO */
+/* ----------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .container-fluid {
+    background-color: #f0f0f0;
+  }
+
+  .carrito a{
+    font-size: 1.6em;
+  }
+
+  .productos {
+    flex: 1 1 150px;
+  }
+
+  #contact-container {
+    flex-direction: column;
+  }
+
+  #contacto form {
+    max-width: 60vw;
+    padding: 6px;
+  }
+
+  #name,
+  #mail,
+  #message,
+  #contacto button {
+    padding: 6px;
+  }
+
+  #contacto button {
+    padding: 8px;
+  }
+
+  #contacto form {
+    width: 70vw;
+  }
+
+  .texto-pie,
+  .redes i {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  .redes {
+    gap: 5px;
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO TABLET */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 601px) and (max-width: 990px) {
+  .container-fluid {
+    background-color: #f0f0f0;
+  }
+
+  #contacto form {
+    width: 70vw;
+  }
+
+  #contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa {
+    width: 80vw;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .texto-pie,
+  .redes i {
+    font-size: 16px;
+  }
+
+  .redes {
+    gap: 5px;
+  }
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO grande */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  #contacto form {
+    width: 50vw;
+  }
+}

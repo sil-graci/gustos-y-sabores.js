@@ -1,0 +1,72 @@
+
+
+  /* A CHEQUEAR */
+  h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.card-body img{
+    width: 30px;
+    height: 45px;
+}
+
+
+#totales{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+#totales p, #totales button {
+    margin:0px 30px 15px 0px;
+    align-items: center;
+    font-size: larger;
+}
+
+.mas button{
+    background-color: #ff7d00;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: large;
+}
+
+#carrito-vacio{
+    text-align: center;
+}
+
+#continuar-compra{
+    display: none;
+    text-align: center;
+}
+
+#agregarMas a{
+    text-decoration: none;
+}
+
+#reiniciar:hover,  #carrito-vacio a:hover{
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: #001524;
+    color: var(--color-fuerte);
+
+}
+
+#reiniciar, #carrito-vacio a, #agregarMas a{
+    border-style: none;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: var(--fondo-oscuro);
+    color: #ffecd1;
+}
