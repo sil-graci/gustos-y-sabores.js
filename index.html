@@ -21,6 +21,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/carrito.css">
     <!-- <link rel="stylesheet" href="./styles/style2.css"> -->
   </head>
   <body>
@@ -34,7 +35,7 @@
         <h1 class="titulo">Gustos y Sabores</h1>
 
         <div class="carrito">
-          <a id="carrito-contar" href="#" aria-label="Ver carrito de compras">
+          <a id="carrito-contar" href="./pages/carrito.html" aria-label="Ver carrito de compras">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cuenta-carrito">0</span>
           </a>
@@ -82,15 +83,6 @@
         </div>
       </nav>
 
-      <!-- <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#acerca-de">Acerca de</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#resenias">Reseñas</a></li>
-        </ul>
-      </nav> -->
     </header>
     <main>
       <section>
@@ -142,80 +134,9 @@
 
       <!-- SECCIÓN PRODUCTOS -->
       <section id="productos" class="productos">
-        <h2>Productos</h2>
-        <div class="productos-contenedor">
-          <div class="producto">
-            <img
-              src="./images/barras-de-chocolate-rellenas2.jpg"
-              alt="Barra de cereal rellena de marroc bañada en chocolate"
-            >
-            <h3>Barra de marroc</h3>
-            <p>
-              Barra de cereal rellena de marroc, bañada en delicioso chocolate.
-            </p>
-            <a href=""></a>
-          </div>
-          <div class="producto">
-            <img
-              src="./images/chocolate-bars-with-nuts.jpg"
-              alt="Barras de chocolate blanco y negro con frutos secos"
-            >
-            <h3>Barras de Chocolate con Frutos Secos</h3>
-            <p>
-              Barras de chocolate blanco y negro combinadas con una selección de
-              frutos secos.
-            </p>
-            <a href=""></a>
-          </div>
-          <div class="producto">
-            <img
-              src="./images/desserts2.jpg"
-              alt="Variedad de postres, alfajores, cupcakes y más"
-            >
-            <h3>Variedad de Postres</h3>
-            <p>Elige entre alfajores, cupcakes y otros deliciosos postres.</p>
-            <a href=""></a>
-          </div>
-
-          <div class="producto">
-            <img
-              src="./images/mixed-nuts.jpg"
-              alt="Mix de frutos secos saludables"
-            >
-            <h3>Mix de Frutos Secos</h3>
-            <p>
-              Una mezcla saludable de nueces, almendras, y otros frutos secos
-              nutritivos.
-            </p>
-            <a href=""></a>
-          </div>
-          <div class="producto">
-            <img
-              src="./images/salty-snacks.jpg"
-              alt="Snacks salados como papitas, palitos y más"
-            >
-            <h3>Snacks Salados</h3>
-            <p>
-              Snacks crujientes como papitas y palitos, perfectos para cualquier
-              momento.
-            </p>
-            <a href=""></a>
-          </div>
-          <div class="producto">
-            <img
-              src="./images/yoghurt_with-fruits.jpg"
-              alt="Yogurt con frutas frescas"
-            >
-            <h3>Yogurt con Frutas</h3>
-            <p>
-              Yogurt natural acompañado de frutas frescas como arándanos y
-              fresas.
-            </p>
-            <a href=""></a>
-          </div>
-        </div>
+        
       </section>
-
+      
       <!-- SECCIÓN RESEÑAS -->
       <section id="resenias" class="resenias-section">
         <h2>Lo que dicen nuestros clientes</h2>
@@ -320,5 +241,8 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/productos.js"></script>
+    <script src="./scripts/carritoProductos.js"></script>
   </body>
 </html>

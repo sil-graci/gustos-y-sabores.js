@@ -1,10 +1,19 @@
 
-
-  /* A CHEQUEAR */
   h1{
     text-align: center;
     margin-top: 10px;
+    /* color: var(--color-fuerte); */
 }
+
+#carrito-title{
+    /* color: #f0f0f0; */
+    color: var(--color-oscuro);
+    text-shadow: 3px 3px 6px var(--color-principal);
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-top: 15px;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -35,11 +44,13 @@
 }
 
 .mas button{
-    background-color: #ff7d00;
+    background-color: rgb(233, 61, 61);
     padding: 5px 10px;
-    font-weight: 400;
-    font-size: large;
+    color: var(--fondo-claro);
+    /* font-weight: 600px; */
+    font-size: larger;
 }
+
 
 #carrito-vacio{
     text-align: center;
@@ -54,14 +65,16 @@
     text-decoration: none;
 }
 
-#reiniciar:hover,  #carrito-vacio a:hover{
+#reiniciar:hover,  #carrito-vacio a:hover, #agregarMas a:hover{
     padding: 5px 8px;
     border-radius: 10px;
-    background-color: #001524;
-    color: var(--color-fuerte);
+    background-color:rgb(233, 61, 61);
+    color: var(--fondo-claro);
 
 }
-
+.mas button:hover{
+    background-color: var(--fondo-oscuro);
+}
 #reiniciar, #carrito-vacio a, #agregarMas a{
     border-style: none;
     text-decoration: none;

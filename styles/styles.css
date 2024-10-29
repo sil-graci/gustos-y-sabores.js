@@ -5,6 +5,7 @@
   --fondo-oscuro: #246a73;
   --fondo-claro: #f3dfc1;
   --color-fuerte: #00bcd4;
+  --color-descripcion: #4a4a4a;
 }
 
 body {
@@ -92,11 +93,19 @@ header {
 #cuenta-carrito{
   display: inline-block;
   height: 25px;
-  width: 15px;
+  width: 20px;
   line-height: 25px;
   text-align: center;
+  background-color:var(--color-fuerte);
+  border-radius: 100%;
+  border: 1px solid var(--color-principal);
+  font-size: 0.7em;
+  color: var(--color-principal);
+  font-weight: bolder;
  
 }
+ 
+
 /* ----------------------------------------------------------------------- */
 /* BARRA DE NAVEGACIÓN */
 /* ----------------------------------------------------------------------- */
@@ -171,6 +180,82 @@ details {
   justify-content: space-between;
   padding: 20px;
 }
+
+.producto {
+  color: var(--color-descripcion);
+  background-color: var(--fondo-claro);
+  box-shadow: 3px 5px 7px rgba(165, 42, 42, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px; /* Controla el tamaño mínimo de cada tarjeta */
+  text-align: center;
+  font-weight: bolder;
+  display: flex; /* Usar flexbox para organizar elementos */
+  flex-direction: column; /* Dirección vertical */
+  justify-content: space-between; /* Espacio entre elementos */
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  padding-top: 10px;
+}
+
+/* Estilo para la descripción del producto */
+.descripcion {
+  flex-grow: 1; /* Permite que la descripción ocupe el espacio flexible */
+  margin: 8px 0;
+}
+
+/* Contenedor para precio y botón */
+.footer {
+  margin-top: auto; /* Empujar el footer hacia el fondo */
+}
+
+/* Ajuste de precio para estar por encima del botón */
+.precio {
+  margin-bottom: 10px; /* Espacio entre el precio y el botón */
+}
+
+/* Estilo del botón */
+.btn-card {
+  background-color: rgb(233, 61, 61);
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: block; 
+  width: 100%; 
+}
+
+.btn:hover {
+  background-color: #368f8b; 
+  color: var(--fondo-claro);
+}
+
+.producto h3 {
+  padding-top: 10px;
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+/* .productos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
 .producto {
   color: var(--color-acento);
   background-color: var(--fondo-claro);
@@ -194,7 +279,7 @@ details {
 
 .producto h3 {
   padding-top: 10px;
-}
+} */
 /* ----------------------------------------------------------------------- */
 /* DISEÑO PARA RESEÑAS */
 /* ----------------------------------------------------------------------- */
