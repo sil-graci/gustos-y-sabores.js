@@ -9,7 +9,7 @@ const continuarCompraElement = document.getElementById("continuar-compra");
 /** Crea las tarjetas de productos usando los datos guardados en localStorage */
 function crearTarjetasProductosCarrito() {
   contenedorTarjetas.innerHTML = "";
-  const productos = JSON.parse(localStorage.getItem("productosEnCarrito")) || [];
+  const productos = JSON.parse(localStorage.getItem("seleccionados")) || [];
 
   if (productos.length > 0) {
     carritoVacioElement.style.display = "none";
@@ -50,13 +50,13 @@ function crearTarjetasProductosCarrito() {
 
 /** Cambia la cantidad de un producto en el carrito */
 function cambiarCantidad(index, cambio) {
-  const productos = JSON.parse(localStorage.getItem("productosEnCarrito")) || [];
+  const productos = JSON.parse(localStorage.getItem("seleccionados")) || [];
   if (productos[index]) {
     productos[index].cantidad += cambio;
     if (productos[index].cantidad <= 0) {
       productos.splice(index, 1);
     }
-    localStorage.setItem("productosEnCarrito", JSON.stringify(productos));
+    localStorage.setItem("seleccionados", JSON.stringify(productos));
     crearTarjetasProductosCarrito();
     actualizarNumeroCarrito();
   }
@@ -64,14 +64,14 @@ function cambiarCantidad(index, cambio) {
 
 /** Actualiza el número de productos en el ícono del carrito */
 function actualizarNumeroCarrito() {
-  const productos = JSON.parse(localStorage.getItem("productosEnCarrito")) || [];
+  const productos = JSON.parse(localStorage.getItem("seleccionados")) || [];
   const totalProductos = productos.reduce((total, producto) => total + producto.cantidad, 0);
   document.getElementById("cuenta-carrito").textContent = totalProductos;
 }
 
 /** Reinicia el carrito */
 document.getElementById("reiniciar").addEventListener("click", () => {
-  localStorage.removeItem("productosEnCarrito");
+  localStorage.removeItem("seleccionados");
   crearTarjetasProductosCarrito();
   cantidadElement.textContent = "0";
   precioElement.textContent = "0.00";
