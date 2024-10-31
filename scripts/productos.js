@@ -6,6 +6,7 @@ if (document.getElementById("productos")) {
 
   // Iterar sobre cada producto en `data` y crear el HTML para cada uno
   data.forEach((producto, index) => { 
+    console.log(`Índice: ${index}`, producto);
       productosHTML += `
         <div class="producto">
           <img src="${producto.imagen}" alt="${producto.alt}">
@@ -13,7 +14,7 @@ if (document.getElementById("productos")) {
           <p class="descripcion">${producto.descripcion}</p>
           <div class="footer">
             <p class="precio">${producto.precio}</p>
-            <a href="#" class="btn btn-card" data-index="${index}">Agregar al carrito</a> <!-- Asigna el índice aquí -->
+            <a href="#" class="btn btn-card" data-index="${index}">Agregar al carrito</a> 
           </div>
         </div>
       `;

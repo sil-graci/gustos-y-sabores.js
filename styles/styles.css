@@ -38,6 +38,7 @@ h3,
 nav,
 button {
   font-family: "Poppins", sans-serif;
+  margin: 6px 0;
 }
 
 
@@ -73,15 +74,16 @@ header {
 /* ----------------------------------------------------------------------- */
 /* CARRITO */
 /* ----------------------------------------------------------------------- */
-
+.carrito a:first-child{
+  position: relative;
+  margin-right: 10px;
+}
 .carrito a {
   color: var(--color-principal);
   font-size: 1.7em;
   padding: 3px 15px;
   text-decoration: none;
 }
-
-
 
 .carrito a:hover{
   color: var(--color-fuerte);
@@ -93,7 +95,7 @@ header {
 #cuenta-carrito{
   display: inline-block;
   height: 25px;
-  width: 20px;
+  width: 25px;
   line-height: 25px;
   text-align: center;
   background-color:var(--color-fuerte);
@@ -102,8 +104,9 @@ header {
   font-size: 0.7em;
   color: var(--color-principal);
   font-weight: bolder;
- 
-}
+  position: absolute;
+
+ }
  
 
 /* ----------------------------------------------------------------------- */
@@ -194,10 +197,12 @@ details {
   display: flex; /* Usar flexbox para organizar elementos */
   flex-direction: column; /* Dirección vertical */
   justify-content: space-between; /* Espacio entre elementos */
+ 
 }
 
 .producto:hover {
   transform: translateY(-5px);
+  box-shadow: 3px 10px 7px rgba(165, 42, 42, 0.8);
 }
 
 .producto img {
@@ -206,9 +211,9 @@ details {
   border-radius: 8px;
 }
 
-.producto h3 {
+/* .producto h3 {
   padding-top: 10px;
-}
+} */
 
 /* Estilo para la descripción del producto */
 .descripcion {

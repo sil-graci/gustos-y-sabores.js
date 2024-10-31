@@ -44,7 +44,7 @@
 }
 
 .mas button{
-    background-color: rgb(233, 61, 61);
+    background-color: rgb(217, 73, 73);
     padding: 5px 10px;
     color: var(--fondo-claro);
     /* font-weight: 600px; */
@@ -68,7 +68,7 @@
 #reiniciar:hover,  #carrito-vacio a:hover, #agregarMas a:hover{
     padding: 5px 8px;
     border-radius: 10px;
-    background-color:rgb(233, 61, 61);
+    background-color:rgb(217, 73, 73);
     color: var(--fondo-claro);
 
 }
