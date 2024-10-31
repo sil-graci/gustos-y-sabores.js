@@ -1,7 +1,7 @@
 var data=[
     {
         codigo:"cod1",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/barras-de-chocolate-rellenas2.jpg?raw=true",
+        imagen:"./images/barras-de-chocolate-rellenas2.jpg",
         alt:"Barra de cereal rellena de marroc bañada en chocolate",
         nombre:"Barra de marroc",
         descripcion:"Barra de cereal rellena de marroc, bañada en delicioso chocolate.",
@@ -9,7 +9,7 @@ var data=[
     },
     {
         codigo:"cod2",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/chocolate-bars-with-nuts.jpg?raw=true",
+        imagen:"./images/chocolate-bars-with-nuts.jpg",
         alt:"Barras de chocolate blanco y negro con frutos secos",
         nombre:"Barras de Chocolate con Frutos Secos",
         descripcion:"Barras de chocolate blanco y negro combinadas con una selección de frutos secos.",
@@ -17,7 +17,7 @@ var data=[
     },
     {
         codigo:"cod3",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/desserts2.jpg?raw=true",
+        imagen:"./images/desserts2.jpg",
         alt:"Variedad de Postres",
         nombre:"Variedad de Postres",
         descripcion:"Elige entre alfajores, cupcakes y otros deliciosos postres",
@@ -25,7 +25,7 @@ var data=[
     },
     {
         codigo:"cod4",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/mixed-nuts.jpg?raw=true",
+        imagen:"./images/mixed-nuts.jpg",
         alt:"Mix de frutos secos saludables",
         nombre:"Mix de Frutos Secos",
         descripcion:"Una mezcla saludable de nueces, almendras, y otros frutos secos nutritivos.",
@@ -33,7 +33,7 @@ var data=[
     },
     {
         codigo:"cod5",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/salty-snacks.jpg?raw=true",
+        imagen:"./images/salty-snacks.jpg",
         alt:"Snacks salados como papitas, palitos y más",
         nombre:"Snacks Salados",
         descripcion:"Snacks crujientes como papitas y palitos, perfectos para cualquier momento.",
@@ -41,7 +41,7 @@ var data=[
     },
     {
         codigo:"cod6",
-        imagen:"https://github.com/sil-graci/gustos-y-sabores.js/blob/main/images/yoghurt_with-fruits.jpg?raw=true",
+        imagen:"./images/yoghurt_with-fruits.jpg",
         alt:"Yogurt con frutas frescas",
         nombre:"Yogurt con Frutas",
         descripcion:"Yogurt natural acompañado de frutas frescas como arándanos y fresas.",
