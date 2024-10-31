@@ -40,12 +40,12 @@ if (document.getElementById("productos")) {
 // Función para manejar la lógica de agregar productos al carrito y almacenarlos en localStorage
 function agregarAlCarrito(producto) {
   // Obtener los datos actuales del carrito almacenados en localStorage
-  const memoria = localStorage.getItem("data");
+  const memoria = localStorage.getItem("productosEnCarrito");
   
   if (!memoria) {
     // Si no hay datos en localStorage, agregar el primer producto con cantidad 1
     const nuevoProducto = { ...producto, cantidad: 1 };
-    localStorage.setItem("data", JSON.stringify([nuevoProducto]));
+    localStorage.setItem("productosEnCarrito", JSON.stringify([nuevoProducto]));
   } else {
     // Si ya hay datos, parsear el JSON para obtener un array de productos
     const productosEnCarrito = JSON.parse(memoria);
@@ -63,7 +63,7 @@ function agregarAlCarrito(producto) {
     }
     
     // Guardar nuevamente el array actualizado en localStorage
-    localStorage.setItem("data", JSON.stringify(productosEnCarrito));
+    localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
   }
 
   actualizarNumeroCarrito();
@@ -74,7 +74,7 @@ const cuentaCarritoElement = document.getElementById("cuenta-carrito");
 
 // Función para actualizar el número total de productos en el carrito
 function actualizarNumeroCarrito() {
-  const memoria = JSON.parse(localStorage.getItem("data") || "[]");
+  const memoria = JSON.parse(localStorage.getItem("productosEnCarrito") || "[]");
   const cuenta = memoria.reduce((acum, current) => acum + current.cantidad, 0);
   cuentaCarritoElement.innerText = cuenta;
 }
