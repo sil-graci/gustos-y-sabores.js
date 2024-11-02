@@ -95,7 +95,7 @@ header {
 #cuenta-carrito{
   display: inline-block;
   height: 25px;
-  width: 25px;
+  width: 30px;
   line-height: 25px;
   text-align: center;
   background-color:var(--color-fuerte);

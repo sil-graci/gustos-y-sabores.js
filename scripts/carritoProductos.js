@@ -19,16 +19,16 @@ function crearTarjetasProductosCarrito() {
 
     productos.forEach((producto, i) => {
       const nuevoItem = document.createElement("div");
-      nuevoItem.classList.add("tarjeta-producto");
+      // nuevoItem.classList.add("productos-contenedor");
       nuevoItem.innerHTML = `
-        <div class="producto">
+        <div class="producto-carrito">
           <div class="card-body">
             <h4>${producto.nombre}</h4>
             <img src="${producto.imagen}" alt="${producto.alt}">
             <p class="precio">Precio: ${producto.precio}</p>
             <div class="mas">
               <button onclick="cambiarCantidad(${i}, -1)">-</button>
-              <span class="cantidad">${producto.cantidad}</span>
+              <span >${producto.cantidad}</span>
               <button onclick="cambiarCantidad(${i}, 1)">+</button>
             </div>
           </div>
@@ -37,7 +37,7 @@ function crearTarjetasProductosCarrito() {
       contenedorTarjetas.appendChild(nuevoItem);
 
       totalCantidad += producto.cantidad;
-      totalPrecio += producto.cantidad * parseFloat(producto.precio.replace("$", "").replace(",", ""));
+      totalPrecio += producto.cantidad * parseFloat(producto.precio.replace("$", ""));
     });
 
     cantidadElement.textContent = totalCantidad;

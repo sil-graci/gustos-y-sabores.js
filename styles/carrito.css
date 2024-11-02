@@ -6,7 +6,6 @@
 }
 
 #carrito-title{
-    /* color: #f0f0f0; */
     color: var(--color-oscuro);
     text-shadow: 3px 3px 6px var(--color-principal);
     font-weight: 900;
@@ -14,41 +13,63 @@
     margin-top: 15px;
 }
 
-.container{
+#cart-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap; 
-    gap: 10px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
+  }
+
+.producto-carrito {
+    color: var(--color-descripcion);
+    background-color: var(--fondo-claro);
+    box-shadow: 3px 5px 7px rgba(165, 42, 42, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+    display: flex; 
+    justify-content: center; 
+    min-width: 300px;
+    max-width: 300px;
+     
+  }
+
+  .producto-carrito h4 {
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 15px;
+  }
 
 .card-body img{
-    width: 30px;
-    height: 45px;
+    width: 40px;
+    height: 55px;
 }
 
 
 #totales{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
 
-
 #totales p, #totales button {
-    margin:0px 30px 15px 0px;
-    align-items: center;
-    font-size: larger;
+    font-size: 1.2em;
 }
 
 .mas button{
     background-color: rgb(217, 73, 73);
-    padding: 5px 10px;
+    padding: 5px px;
     color: var(--fondo-claro);
     /* font-weight: 600px; */
     font-size: larger;
+    border-radius: 5px;
 }
 
 
@@ -82,4 +103,24 @@
     border-radius: 8px;
     background-color: var(--fondo-oscuro);
     color: #ffecd1;
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO MÓVILES PEQUEÑOS */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 320px) and (max-width: 599px){
+    #totales p, #totales button {
+        font-size: 0.8em;
+    }
+ 
+    
+}
+
+/* ----------------------------------------------------------------------- */
+/* DISEÑO PARA PANTALLAS TAMAÑO TABLET */
+/* ----------------------------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 990px){ 
+ #reiniciar{
+    margin-left: 25px;
+ }
 }

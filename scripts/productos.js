@@ -25,17 +25,15 @@ if (document.getElementById("productos")) {
   document.getElementById("productos").innerHTML = productosHTML;
 
   // Agregar los event listeners para los botones "Agregar al carrito" en cada producto
-  var productosButtons = document.querySelectorAll("#productos .btn.btn-card");
+  let productosButtons = document.querySelectorAll("#productos .btn.btn-card");
   productosButtons.forEach(button => {
       button.addEventListener("click", (event) => {
           event.preventDefault();
-          var index = event.target.getAttribute("data-index"); 
-          agregarAlCarrito(data[index]); // Llamamos a la función para añadir al carrito
+          let index = event.target.getAttribute("data-index"); 
+          agregarAlCarrito(data[index]); // Llamamos a la función para añadir al carrito el producto del array data con el índice donde se hizo clic
       });
   });
 }
-
-
   
 // Función para manejar la lógica de agregar productos al carrito y almacenarlos en localStorage
 function agregarAlCarrito(producto) {
